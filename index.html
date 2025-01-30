@@ -36,14 +36,14 @@
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
+            min-height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
-            padding: 4rem 2rem;
+            padding: 2rem;
             background: var(--dark-bg);
         }
 
@@ -222,7 +222,7 @@
 
         @media (max-width: 768px) {
             .hero {
-                padding: 2rem 1rem;
+                padding: 1rem;
             }
 
             h1 {
@@ -259,7 +259,16 @@
                 </div>
                 <div class="project-media">
                     <div class="media-item">
-                        <img src="/api/placeholder/400/320" alt="Film Screenshot">
+                        <iframe 
+                            width="100%" 
+                            height="300" 
+                            src="https://www.youtube.com/embed/-oeZ1jnmIDY" 
+                            title="From Violin to Salaryman" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            style="border-radius: 0.75rem;"
+                        ></iframe>
                         <p class="media-caption">Award-Winning Short Film</p>
                     </div>
                 </div>
@@ -278,12 +287,33 @@
                 <span class="project-type creative">Creative</span>
                 <div class="project-header">
                     <h2 class="project-title">Sculpture Portfolio</h2>
-                    <p class="project-subtitle">Spring 2023</p>
+                    <p class="project-subtitle">Spring 2024</p>
                 </div>
+                <h3 class="project-subtitle">Nomadic Imprints Installation</h3>
                 <div class="project-media">
                     <div class="media-item">
-                        <img src="/api/placeholder/400/320" alt="Sculpture Work">
-                        <p class="media-caption">Form Studies in Mixed Media</p>
+                        <img src="https://i.imgur.com/lz9J9wR.jpg" alt="Nomadic Imprints Front View">
+                        <p class="media-caption">Installation Front View</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="https://i.imgur.com/Y0N4tUa.jpg" alt="Nomadic Imprints Side View">
+                        <p class="media-caption">Installation Detail</p>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <p>Developed a comprehensive portfolio showcasing sculptural works exploring form, material, and spatial relationships. Demonstrated proficiency in various materials and techniques while maintaining engineering precision.</p>
+                </div>
+
+                <h3 class="project-subtitle mt-8">Additional Works</h3>
+                <div class="project-media mt-4">
+                    <div class="media-item">
+                        <img src="https://i.imgur.com/qCXtsf7.jpg" alt="Geometric Wall Piece">
+                        <p class="media-caption">Geometric Wall Installation</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="https://i.imgur.com/vb8c8J9.jpg" alt="Sculptural Footwear Study">
+                        <p class="media-caption">Material Study: Footwear Form</p>
                     </div>
                 </div>
                 <div class="project-content">
@@ -305,14 +335,19 @@
                 </div>
                 <div class="project-media">
                     <div class="media-item">
-                        <img src="/api/placeholder/400/320" alt="CAD Prototype">
-                        <p class="media-caption">SolidWorks CAD Design</p>
+                        <img src="https://i.imgur.com/XnKu6xu.jpg" alt="CAD Prototype">
+                        <p class="media-caption">Claw Mechanism CAD Prototype</p>
                     </div>
                     <div class="media-item">
-                        <video controls poster="/api/placeholder/400/320">
-                            <source src="#" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe 
+                            src="https://player.vimeo.com/video/1051765748" 
+                            width="100%" 
+                            height="300" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture" 
+                            allowfullscreen
+                            style="border-radius: 0.75rem;"
+                        ></iframe>
                         <p class="media-caption">Robot Testing and Implementation</p>
                     </div>
                 </div>
