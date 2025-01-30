@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johann Ocampo - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: rgb(249, 250, 251);
+            color: rgb(55, 65, 81);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: rgb(17, 24, 39);
+            margin-bottom: 1rem;
+        }
+
+        .college {
+            font-size: 1.25rem;
+            color: rgb(107, 114, 128);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: rgb(107, 114, 128);
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: rgb(17, 24, 39);
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: rgb(17, 24, 39);
+            margin-bottom: 0.5rem;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            color: rgb(107, 114, 128);
+            margin-bottom: 1rem;
+        }
+
+        .projects {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .project-media {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-media img,
+        .project-media video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.375rem;
+        }
+
+        .media-caption {
+            text-align: center;
+            color: rgb(107, 114, 128);
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: rgb(243, 244, 246);
+            color: rgb(55, 65, 81);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-media {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Johann Ocampo</h1>
+            <p class="college">Bowdoin College</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <h3>Physics Major at Bowdoin College</h3>
+            <p>Physics student with a passion for combining technical precision with creative design. My project experience spans both artistic expression and practical engineering applications, showcasing my ability to bridge analytical and creative thinking.</p>
+        </section>
+
+        <section class="projects">
+            <div class="card">
+                <h2>バイオリンからサラリマン (From Violin to Salaryman)</h2>
+                <h3>Fall 2024</h3>
+                <div class="project-media">
+                    <div>
+                        <img src="/api/placeholder/400/320" alt="Film Screenshot">
+                        <p class="media-caption">Film Screenshot</p>
+                    </div>
+                </div>
+                <p>Mastered advanced video editing techniques and storytelling through visual media. Won the Shirokuma Award for Best Film from Bowdoin Japanese Department.</p>
+                <div class="skills">
+                    <span class="skill-tag">Adobe Premiere Pro</span>
+                    <span class="skill-tag">Film Direction</span>
+                    <span class="skill-tag">Japanese Language</span>
+                    <span class="skill-tag">Visual Storytelling</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Sculpture Portfolio</h2>
+                <h3>Spring 2023</h3>
+                <div class="project-media">
+                    <div>
+                        <img src="/api/placeholder/400/320" alt="Sculpture Work">
+                        <p class="media-caption">Sculpture Work</p>
+                    </div>
+                </div>
+                <p>Developed a comprehensive portfolio showcasing sculptural works exploring form, material, and spatial relationships. Demonstrated proficiency in various materials and techniques while maintaining engineering precision.</p>
+                <div class="skills">
+                    <span class="skill-tag">3D Design</span>
+                    <span class="skill-tag">Material Analysis</span>
+                    <span class="skill-tag">Artistic Vision</span>
+                    <span class="skill-tag">Technical Execution</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>FIRST Robotics</h2>
+                <h3>Spring 2023</h3>
+                <div class="project-media">
+                    <div>
+                        <img src="/api/placeholder/400/320" alt="CAD Prototype">
+                        <p class="media-caption">CAD Prototype</p>
+                    </div>
+                    <div>
+                        <video controls poster="/api/placeholder/400/320">
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="media-caption">Robot Testing</p>
+                    </div>
+                </div>
+                <p>Designed and implemented comprehensive CAD models for critical robot components using SolidWorks. Participated in full robot construction and competition, applying CAD designs to real-world engineering challenges.</p>
+                <div class="skills">
+                    <span class="skill-tag">SolidWorks CAD</span>
+                    <span class="skill-tag">3D Modeling</span>
+                    <span class="skill-tag">Technical Documentation</span>
+                    <span class="skill-tag">Mechanical Design</span>
+                    <span class="skill-tag">Robot Assembly</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
