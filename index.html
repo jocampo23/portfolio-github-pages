@@ -6,7 +6,7 @@
     <title>Johann Ocampo - Creative Engineer</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
     <style>
-        /* Keeping all the existing styles */
+        /* All existing styles remain the same until .media-item */
         * {
             margin: 0;
             padding: 0;
@@ -141,6 +141,7 @@
             font-size: 1rem;
             color: var(--text-secondary);
             margin-bottom: 1rem;
+            padding-left: 0;
         }
 
         .project-media {
@@ -156,22 +157,19 @@
             overflow: hidden;
         }
 
-        .media-item img,
-        .media-item video {
+        .media-item img {
             width: 100%;
             height: 300px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-        
-        /* Special handling for specific images */
+
         .media-item.contain-fit img {
             object-fit: contain;
             background-color: var(--card-bg);
         }
 
-        .media-item:hover img,
-        .media-item:hover video {
+        .media-item:hover img {
             transform: scale(1.05);
         }
 
@@ -258,7 +256,7 @@
         </section>
 
         <section class="projects">
-            <!-- FIRST Robotics moved to top -->
+            <!-- FIRST Robotics -->
             <div class="project-card">
                 <span class="project-type">Technical</span>
                 <div class="project-header">
@@ -295,7 +293,7 @@
                 </div>
             </div>
 
-            <!-- Sculpture Portfolio in middle -->
+            <!-- Sculpture Portfolio -->
             <div class="project-card">
                 <span class="project-type creative">Creative</span>
                 <div class="project-header">
@@ -314,11 +312,7 @@
                     </div>
                 </div>
 
-                <div class="project-content">
-                    <p>Developed a comprehensive portfolio showcasing sculptural works exploring form, material, and spatial relationships. Demonstrated proficiency in various materials and techniques while maintaining engineering precision.</p>
-                </div>
-
-                <h3 class="project-subtitle mt-8">Additional Works</h3>
+                <h3 class="project-subtitle">Additional Works</h3>
                 <div class="project-media mt-4">
                     <div class="media-item">
                         <img src="https://imgur.com/7yocTsG.jpg" alt="Geometric Wall Piece">
@@ -344,7 +338,7 @@
                 </div>
             </div>
 
-            <!-- Film Project moved to bottom -->
+            <!-- Film Project -->
             <div class="project-card">
                 <span class="project-type creative">Creative</span>
                 <div class="project-header">
