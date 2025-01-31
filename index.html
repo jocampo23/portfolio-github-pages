@@ -172,10 +172,17 @@
             background-color: var(--card-bg);
         }
 
+        .media-item.video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        
         .media-item iframe {
-            aspect-ratio: 16/9;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
             border-radius: 0.75rem;
         }
 
@@ -278,15 +285,15 @@
                         <img src="https://imgur.com/LHO0c7r.jpg" alt="CAD Prototype">
                         <p class="media-caption">Claw Mechanism CAD Prototype</p>
                     </div>
-                    <div class="media-item">
+                    <div class="media-item video-container">
                         <iframe 
                             src="https://player.vimeo.com/video/1051765748" 
                             width="100%" 
-                            height="300" 
+                            height="100%" 
                             frameborder="0" 
                             allow="autoplay; fullscreen; picture-in-picture" 
                             allowfullscreen
-                            style="border-radius: 0.75rem;"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 0.75rem;"
                         ></iframe>
                         <p class="media-caption">Robot Testing and Implementation</p>
                     </div>
@@ -313,11 +320,11 @@
                 <div class="project-media">
                     <div class="media-item">
                         <img src="https://imgur.com/JPQIaRm.jpg" alt="Nomadic Imprints Front View" class="zoom-cursor">
-                        <p class="media-caption">Nomadic Imprints Front View</p>
+                        <p class="media-caption">Installation Front View</p>
                     </div>
                     <div class="media-item">
                         <img src="https://imgur.com/UssScQK.jpg" alt="Nomadic Imprints Side View">
-                        <p class="media-caption">Nomadic Imprints Side View</p>
+                        <p class="media-caption">Installation Side View</p>
                     </div>
                 </div>
                 <div class="project-media">
